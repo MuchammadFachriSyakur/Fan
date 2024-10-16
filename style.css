@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #8080804b;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.container .buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.container .buttons button{
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1.5px solid #00000084;
+  border-radius: 2px;
+}
+.kipasAngin{
+ box-sizing: border-box;
+ width: 200px;
+ height: 200px;
+ background: linear-gradient(salmon 50%, blue 50%);
+ border-radius: 50%;
+ margin: 10px auto;
+ animation: putar steps(30) infinite;
+ transition: all 1s ease-in-out;
+}
+@keyframes putar{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
